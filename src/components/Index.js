@@ -5,7 +5,7 @@ import CardsPage from './pages/cards/CardsPage'
 import About from "./pages/about/About";
 import Academic from "./pages/Academic/Academic";
 import Footer from "./layout/footer/Footer";
-import Services from "./pages/services/Services";
+import Services from './pages/services/Services'
 
 export {
     Header,

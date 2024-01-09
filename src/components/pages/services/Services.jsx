@@ -1,4 +1,4 @@
-import './services.css'
+import './Services.css'
 import React from 'react'
 
 const Services = () => {
