@@ -1,5 +1,5 @@
 import './slider.css';
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import Slide from './Slide'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
