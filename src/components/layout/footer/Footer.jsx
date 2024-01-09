@@ -1,6 +1,12 @@
 import './Footer.css'
 import React from 'react'
+import { IoLocationSharp } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import { IoLockOpenSharp } from "react-icons/io5";
+import { FaAngleDoubleRight } from "react-icons/fa";
+import Logo from '../../../assets/Navbar/logo.png'
+import { SlCalender } from "react-icons/sl";
 
 const Footer = () => {
     return (
@@ -13,18 +19,19 @@ const Footer = () => {
                         <div className="wrapper">
 
                             <div className="box brand">
-                                <img src="https://designarc.biz/demos/cleanex/assets/images/footer-logo.png" alt="" />
+
+                                <img className='w-[10rem]' src={Logo} />
                                 <div className="logos">
                                     <p>
-                                        <IoLockOpenSharp />
-                                        Location
+                                        <IoLocationSharp />
+                                        Bhagalpur, Bihar
                                     </p>
                                     <p>
-                                        <IoLockOpenSharp />
+                                        <FaPhoneAlt />
                                         +91 1234567890
                                     </p>
                                     <p>
-                                        <IoLockOpenSharp />
+                                        <IoMdMail />
                                         Email
                                     </p>
                                 </div>
@@ -39,21 +46,33 @@ const Footer = () => {
                                     </figure>
                                     <figure className='h-[2px] w-14 bg-[red]'></figure>
                                 </figure>
-                                <a href="">Home</a>
-                                <a href="">About Us</a>
-                                <a href="">Schedule Appointment</a>
-                                <a href="">Testimonial</a>
+                                <a href=""><FaAngleDoubleRight /> Home</a>
+                                <a href=""><FaAngleDoubleRight /> About Us</a>
+                                <a href=""><FaAngleDoubleRight /> Addmission Form</a>
+                                <a href=""><FaAngleDoubleRight /> Academic Calender</a>
+                                <a href=""><FaAngleDoubleRight /> Notice Board</a>
+                                <a href=""><FaAngleDoubleRight /> Career</a>
                             </div>
 
                         </div>
                         <div className="box wrapper">
 
                             <div className="box box3 links">
-                                <a href="">Home Cleaning</a>
-                                <a href="">Office Cleaning</a>
-                                <a href="">Window Cleaning</a>
-                                <a href="">Commerial Cleaning</a>
-                                <a href="">Residential Cleaning</a>
+                            <h2>Latest News</h2>
+                                <figure className='w-full flex items-center gap-3 mb-4'>
+                                    <figure className='h-4 w-4 bg-[red] flex items-center justify-center rotate-45'>
+                                        <p className='w-2.5 h-2.5 border-2 border-white rounded-full'></p>
+                                    </figure>
+                                    <figure className='h-[2px] w-14 bg-[red]'></figure>
+                                </figure>
+                                <div>
+                                    <p> <SlCalender/> 2-4-2024</p>
+                                    ADDMISSION OPEN FOR CLASS XII
+                                </div>
+                                <div>
+                                    <p> <SlCalender/> 28-3-2024</p>
+                                    ADDMISSION OPEN FOR CLASS XII
+                                </div>
                             </div>
 
                             <div className="box address">
@@ -64,15 +83,10 @@ const Footer = () => {
                                     </figure>
                                     <figure className='h-[2px] w-14 bg-[red]'></figure>
                                 </figure>
-                                <p>
-                                    54B, Tailstoi Town 5238 ST, <br />
-                                    La city, IA 522364
-                                </p>
-                                <p>
-                                    Email us :
-                                    contact@example.com
-                                </p>
-                                <h2>+ 1800 456 7890</h2>
+                                <p>IUI I IVF I ICSI</p>
+                                <p>Infertility Assessment - Female</p>
+                                <p>Infertility Assessment - Male</p>
+                                <p>Fertility Enhancing Surgeries</p>
                             </div>
 
                         </div>

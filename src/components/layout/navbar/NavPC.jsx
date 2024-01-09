@@ -12,7 +12,7 @@ const contactLinks = [
     { route: "xeta", name: "Xeta" }
 ]
 
-const Navbar = ({ openTab }) => {
+const Navbar = ({ open, openTab }) => {
 
     const pcRef = useRef();
     const imgRef = useRef();
@@ -42,57 +42,57 @@ const Navbar = ({ openTab }) => {
 
             <img
                 ref={imgRef}
-                className='main_logo z-50 fixed top-[3rem] bg-white transition-all duration-500'
+                className='main_logo z-50 fixed top-[3rem] bg-[aliceblue] transition-all duration-500'
                 src={Logo}
                 alt="logo"
             />
 
-            <div ref={pcRef} className='nav_pc z-40 bg-[rgba(225,225,225,.7)] font-semibold fixed top-[3rem] flex items-center justify-end w-full  transition-all duration-500'>
+            <div ref={pcRef} className='nav_pc z-40 bg-white font-semibold fixed top-[3rem] flex items-center justify-end w-full  transition-all duration-500'>
 
                 <div className='flex h-full items-center'>
-                    <a className='link' href="">
+                    <a className='link'>
                         HOME
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
-                    <a className='link' href="">
+                    <a className='link'>
                         ABOUT US
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
-                    <a className='link' href="">
+                    <a className='link'>
                         ADMISSION
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
-                    <a className='link' href="">
+                    <a className='link'>
                         ACADEMIC
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
-                    <a className='link' href="">
+                    <a className='link'>
                         CODE OF CONDUCT
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
-                    <a className='link' href="">
+                    <a className='link'>
                         GALLERY
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
-                    <a className='link' href="">
+                    <a className='link'>
                         CBSE RULES
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
-                    <a className='link' href="">
+                    <a className='link'>
                         CONTACT US
                         <HiOutlineChevronDoubleDown />
                         <OverflowLinks links={contactLinks} />
                     </a>
                 </div>
 
-                <CgMenuHotdog className='menu' onClick={() => openTab(true)} />
+                <CgMenuHotdog className='menu' onClick={() => openTab(!open)} />
 
             </div>
         </>
