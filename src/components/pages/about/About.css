@@ -1,0 +1,28 @@
+.about{
+    padding: 5rem 16vmax;
+}
+
+@media (max-width:1334px){
+    .about{
+        flex-direction: column;
+    }
+    .about > figure{
+        width: 100%;
+        justify-content: center;
+    }
+    .about > div{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px){
+    .about{
+        padding: 5rem 3vmax;
+    }
+}
+
+@media (max-width:500px){
+    .about > div .key_points{
+        grid-template-columns:repeat(1,1fr);
+    }
+}

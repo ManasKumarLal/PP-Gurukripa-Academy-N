@@ -1,0 +1,17 @@
+.cards_page {
+    margin-top: -5rem;
+}
+
+@media (max-width:1350px) {}
+
+@media (max-width:900px) {}
+
+@media (max-width:500px) {
+    .cards_page>div {
+        width: 100%;
+    }
+
+    .cards_page {
+        margin-top: -14vmax;
+    }
+}

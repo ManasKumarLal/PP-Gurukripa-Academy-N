@@ -1,0 +1,33 @@
+.academic{
+    padding: 5rem 0 0 8vmax;
+    height:97vh;
+}
+
+@media (max-width:1334px){
+    .academic{
+        padding: 5rem 3vmax;
+        height: auto;
+        flex-direction: column;
+    }
+    .academic > div{
+        width: 100%;
+    }
+    .academic > figure{
+        width: 100%;
+    }
+    .academic > figure > p{
+        padding-right: 3vmax;
+    }
+}
+
+@media (max-width:800px){
+    .academic{
+        padding: 5rem 3vmax;
+    }
+}
+
+@media (max-width:600px){
+    .academic .cards{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,43 @@
+.services {
+    padding: 5rem 8vmax;
+}
+
+
+
+.services > div .box1{
+    width: 20rem;
+    max-width: 30%;
+ }
+
+ .services .box2 {
+    word-spacing: 10px;
+    width: 70%;
+}
+
+@media (max-width:1334px) {
+    .services {
+        padding: 5rem 3vmax;
+    }
+    .services > div{
+        flex-direction: column;
+    }
+    .services > div .box1{
+        width: 20rem;
+        max-width: 100%;
+     }
+    .services > div .box2{
+       width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .services > div .box1{
+        width: 100%;
+     }
+    .services > div .box2 > div{
+        flex-direction: column;
+     }
+    .services > div .box2 > div >img{
+        width: 25rem;
+     }
+}

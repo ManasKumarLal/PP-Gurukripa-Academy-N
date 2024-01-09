@@ -1,0 +1,153 @@
+/* ******************Nav Pc ************************ */
+.main_logo {
+    left: 8vmax;
+    height: 7vmax;
+}
+
+.nav_pc {
+    padding: 0 8vmax;
+    height: 5rem;
+}
+
+.navbar>.nav_pc .link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 1rem;
+    position: relative;
+    height: 60%;
+}
+
+.navbar>.nav_pc .link>div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(1rem, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 5px;
+    background-color: #2D308D;
+    color: white;
+    transition: all.5s;
+    font-size: 0;
+    opacity: 0;
+}
+
+.navbar>.nav_pc .link:hover>div {
+    font-size: inherit;
+    opacity: 1;
+    padding: 1rem 4rem 1rem 2rem;
+}
+
+.navbar>.nav_pc .link>svg {
+    transition: all ease-in-out .5s;
+}
+
+.navbar>.nav_pc .link:hover>svg {
+    transform: rotate(180deg);
+}
+
+.nav_pc>.menu {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:1480px) {
+    .nav_pc {
+        height: 4rem;
+    }
+
+    .main_logo {
+        height: 6rem;
+    }
+
+    .navbar>.nav_pc>div {
+        display: none;
+    }
+
+    .nav_pc>.menu {
+        display: block;
+    }
+}
+
+@media (max-width:500px) {
+    .nav_pc {
+        padding: 0 2vmax;
+    }
+
+    .main_logo {
+        left: 2vmax;
+    }
+}
+
+/* ************************Nav Mobile********************** */
+.navbar .nav_mobile {
+    width: 20rem;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #3A3A3A;
+    color: white;
+    transition: all .4s;
+}
+
+.navbar .close {
+    height: 0;
+    width: 0;
+    scale: 0;
+}
+
+.navbar .nav_mobile>svg {
+    font-size: 30px;
+    margin: 1vmax 1vmax 5rem 1vmax;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.navbar .nav_mobile>svg:hover {
+    color: tomato;
+}
+
+.navbar .nav_mobile .link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem 1rem;
+    position: relative;
+    height: 60%;
+}
+
+.navbar .nav_mobile .link>div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 5px;
+    background-color: #2D308D;
+    transition: all.5s;
+    font-size: 0;
+    opacity: 0;
+}
+
+.navbar>.nav_mobile .link:hover>div {
+    font-size: inherit;
+    opacity: 1;
+    padding: 1rem 4rem 1rem 2rem;
+}
+
+.navbar>.nav_mobile .link>svg {
+    transition: all ease-in-out .5s;
+}
+
+.navbar>.nav_mobile .link:hover>svg {
+    transform: rotate(180deg);
+}

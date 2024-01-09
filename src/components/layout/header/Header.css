@@ -1,0 +1,19 @@
+.header {
+    padding: 0 8vmax;
+}
+
+@media (max-width:1330px) {
+    .header>div>p>span {
+        display: none;
+    }
+
+    .header>div {
+        gap: .5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .header {
+        padding: 0 2vmax;
+    }
+}
