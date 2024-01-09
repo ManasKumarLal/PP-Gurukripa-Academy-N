@@ -7,6 +7,7 @@ import Academic from "./pages/Academic/Academic";
 import Footer from "./layout/footer/Footer";
 import Services from './pages/services/Services'
 import Slider from './pages/slider/Slider'
+import Specialists from "./pages/specialists/Specialists";
 
 export {
     Header,
@@ -18,4 +19,5 @@ export {
     Footer,
     Services,
     Slider,
+    Specialists
 }

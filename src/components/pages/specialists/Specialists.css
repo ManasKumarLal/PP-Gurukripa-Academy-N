@@ -1,0 +1,17 @@
+.specialists{
+    padding: 5rem 8vmax;
+    padding-bottom: 10rem;
+}
+@media (max-width:800px) {
+    .specialists{
+        padding: 5rem 3vmax;
+    }
+    .specialists > div:first-child{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .specialists > div:first-child > div > h1{
+        font-size: 4vmax;
+    }
+    
+}

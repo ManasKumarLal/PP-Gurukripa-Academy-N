@@ -1,5 +1,5 @@
 import './App.css'
-import { Header, Navbar, LandingPage, CardsPage, Academic, Footer, Services, Slider } from './components/Index'
+import { Header, Navbar, LandingPage, CardsPage, Academic, Footer, Services, Slider, Specialists } from './components/Index'
 import About from './components/pages/about/About'
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
       <About />
       <Academic />
       <Services />
-      <Slider/>
+      <Slider />
+      <Specialists />
       <Footer />
     </>
   )

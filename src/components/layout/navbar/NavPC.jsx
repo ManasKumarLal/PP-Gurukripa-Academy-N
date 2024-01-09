@@ -42,7 +42,8 @@ const Navbar = ({ open, openTab }) => {
 
             <img
                 ref={imgRef}
-                className='main_logo z-50 fixed top-[3rem] bg-[aliceblue] transition-all duration-500'
+                className='main_logo z-50 fixed top-[3rem] bg-white transition-all duration-500'
+                style={{ boxShadow: "0 0 15px black" }}
                 src={Logo}
                 alt="logo"
             />
