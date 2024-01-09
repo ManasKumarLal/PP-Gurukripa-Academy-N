@@ -1,0 +1,71 @@
+.slider {
+    background: url(https://media.istockphoto.com/id/895319786/photo/close-up-of-scrub-nurse-taking-medical-instruments-surgery-and-emergency-concept.jpg?s=612x612&w=0&k=20&c=oOVnpdK-1QgwjwxF5SbfdgnqPFFoO27pG5-QWerhJfs=);
+    background-size: cover;
+}
+
+.slider>div {
+    padding: 5rem 8vmax;
+}
+
+.slider .swiper {
+    width: 100%;
+    height: 27rem;
+}
+
+.slider .swiper-slide {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+    height: 100%;
+}
+
+.slider .swiper-slide>div {
+    position: relative;
+    padding: 5vmax 8vmax;
+    widows: 100%;
+    height: 100%;
+}
+
+.slider .swiper-slide>div>figure {
+    width: 7rem;
+    height: 7rem;
+}
+
+.slider .swiper-slide>div>h2 {
+    margin-top: 3rem;
+}
+
+@media (max-width:1500px) {
+    .slider .swiper-slide>div {
+        padding: 7vmax 2vmax 0 12vmax;
+    }
+}
+
+@media (max-width:800px) {
+    .slider>div {
+        padding: 5rem 2vmax;
+    }
+
+    .slider .swiper {
+        height: 25rem;
+    }
+
+    .slider .swiper-slide>div {
+        padding: 5vmax 2vmax 0 6vmax;
+    }
+
+    .slider .swiper-slide>div>figure {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .slider .swiper-slide>div>p {
+        font-size: 2vmax;
+        font-weight: 400;
+    }
+
+    .slider .swiper-slide>div>h2 {
+        margin-top: 2rem;
+    }
+}

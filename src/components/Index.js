@@ -6,6 +6,7 @@ import About from "./pages/about/About";
 import Academic from "./pages/Academic/Academic";
 import Footer from "./layout/footer/Footer";
 import Services from './pages/services/Services'
+import Slider from "./pages/Slider/Slider";
 
 export {
     Header,
@@ -16,4 +17,5 @@ export {
     Academic,
     Footer,
     Services,
+    Slider,
 }

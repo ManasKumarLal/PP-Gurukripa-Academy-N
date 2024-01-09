@@ -6,12 +6,12 @@
 
 .services > div .box1{
     width: 20rem;
-    max-width: 30%;
+    max-width: 25%;
  }
 
  .services .box2 {
     word-spacing: 10px;
-    width: 70%;
+    width: 75%;
 }
 
 @media (max-width:1334px) {

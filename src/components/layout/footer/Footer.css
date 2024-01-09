@@ -78,7 +78,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 5rem 2vmax;
+    padding: 5rem 4vmax;
 }
 
 .footer .body .top .wrapper {
@@ -90,20 +90,43 @@
 
 .footer .body .top .wrapper .box {
     width: 50%;
+    align-self: flex-end;
+}
+
+.footer .body .top .wrapper .box>h2 {
+    font-size: 25px;
+}
+
+.footer .body .top .wrapper .box>p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .body .top .wrapper .box3 {
+    transform: translateY(-10%);
 }
 
 .footer .body .top .wrapper .brand .logos {
     margin-top: 2vmax;
     display: flex;
+    flex-direction: column;
     gap: 1vmax;
-    font-size: 25px;
+    font-size: 18px;
 }
 
-.footer .body .top .wrapper .brand .logos i {
-    border: 1px solid rgba(255, 255, 255, 0.592);
-    border-radius: 50%;
-    padding: 6px 7px;
+.footer .body .top .wrapper .brand .logos>p {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: rgba(255, 255, 255, 0.7);
 }
+
+.footer .body .top .wrapper .brand .logos>p>svg {
+    background-color: #312F30;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 100%;
+}
+
 
 .footer .body .top .wrapper .links {
     display: flex;
@@ -113,12 +136,11 @@
 
 .footer .body .top .wrapper .links h2 {
     margin-bottom: .5vmax;
-    font-size: 20px;
 }
 
 .footer .body .top .wrapper .links a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
@@ -131,7 +153,6 @@
 
 .footer .body .top .wrapper .address h2 {
     margin-bottom: .5vmax;
-    font-size: 20px;
 }
 
 .footer .body .top .wrapper .address p {
@@ -198,11 +219,13 @@
     }
 }
 
-@media (max-width:570px) {
+@media (max-width:800px) {
     .footer .body .bottom {
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
-        height: 7rem;
+        text-align: center;
+        gap: 2rem;
+        height: 13rem;
+        background-color: #312F30;
     }
 }
